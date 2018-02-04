@@ -10,5 +10,5 @@ https://preview.c9users.io/azuu/crimson_shard/index.html?_c9_id=livepreview0&_c9
 ### Ou, si le lien n'est pas valide : 
 - Cliquer sur le bouton vert "Clone or download"
 - Cliquer sur "Download ZIP"
-- Extraire le dossier "MMI_master"
+- Extraire le dossier "Crimson_Shard_master"
 - Ouvrir le fichier "index.html"
