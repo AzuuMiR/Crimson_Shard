@@ -27,20 +27,14 @@ a:hover {
     color: #B72828;
     text-decoration: none;
 }
-.navbar, .left-profile, footer {
-    background-image: url(../img/binding_dark.png);
-    background-attachment: fixed;
-    background-repeat: repeat;
-    background-position: center;
-}
-footer {
-    height: 50px;
-    display: none;
-}
 
             /* Navbar */
 
 .navbar {
+    background-image: url(../img/binding_dark.png);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-position: center;
     border: none;
     font-size: 19px;
     letter-spacing: 1px;
@@ -137,7 +131,9 @@ footer {
     text-align: center;    
 }
 .icons ul {
+    margin-top: 10px;
     margin-bottom: 10%;
+    float: center;
 }
 .icons li {
     font-size: 20px;
@@ -160,6 +156,9 @@ footer {
 
             /* Tabs */
 
+.tab-page {
+    margin-bottom: 40px;
+}
 .homepage p {
     letter-spacing: 1px;
 }
@@ -176,6 +175,12 @@ footer {
     letter-spacing: 3px;
     text-transform: uppercase;
 }
+.tab-page h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #666;
+}
 h2 {
     font-family: "OpenSansRegular";
     text-transform: uppercase;
@@ -191,41 +196,29 @@ p {
 }
 hr { 
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
   background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
 }
-.italic {
-    font-style: italic;
-    text-align: center;
-}
-.dropdown-menu {
-    background-color: rgba(200, 40, 40, 0.8);
-}
-.dropdown-menu li {
-    height: 30px;
-}
-.dropdown-menu .active a {
-    background-color: #B72828 !important;
-}
-.dropdown.active a {
-    cursor: pointer !important;
-}
-.copyright, .copyright-left {
+.theme {
     font-size: 14px;
     letter-spacing: 2px;
     text-align: center;
     color: #731C1C !important;
-}
-.copyright {
-    padding-top: 15px;
-}
-.copyright-left {
     margin-top: 15%;
 }
-
+.banner {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.panel-default {
+    color: #666;
+}
+.panel-collapse {
+    margin: 15px;
+}
             /* Galleries */
 
 .folio-images img {
@@ -250,9 +243,6 @@ ul.images {
 ul.images li {
     display: inline-block;
     position: relative;
-}
-#skills li, #learning li {
-    margin-top: 5px;
 }
 span.text-overlay {
     background: rgba(200, 40, 40, 0.8);
@@ -295,45 +285,22 @@ ul.images li:hover span.text-overlay {
 .thumbnail:hover {
     border: 1px solid #B72828 !important;
 }
-.tab-content ul {
+.tab-content {
     margin-top: 10px;
 }
 
             /* Responsive Design */
-
-@media only screen and (max-height: 890px) {
-    .left-profile {
-        height: auto;
-    }
-}
 
     /* Tablette (Portrait) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
     h4 {
         margin-right: 20px;
     }
-    footer {
-        display: block;
-    }
-    .icons ul {
-        margin-top: 10px;
-        float: right;
-        margin-right: 10%;
-    }
-    .left-profile {
-        margin-top: 50px;
-    }
-    .left-profile img {
+    .sidenav img {
         max-width: 50%;
-        float: left;
-        margin-top: 20px;
-        margin-right: 20px;
     }
     .tab-page {
         margin-bottom: 40px;
-    }
-    .copyright-left {
-        display: none;
     }
 }
     /* Mobile (Paysage) - Note: Largeur de 480px */
@@ -341,24 +308,11 @@ ul.images li:hover span.text-overlay {
     h4 {
         margin-right: 20px;
     }
-    .icons ul {
-        margin-top: 10px;
-        float: center;
-    }
-    .left-profile {
-        margin-top: 50px;
-    }
-    .left-profile img {
+    .sidenav img {
         max-width: 50%;
-        float: left;
-        margin-top: 20px;
-        margin-right: 20px;
     }
     .tab-page {
         margin-bottom: 40px;
-    }
-    .copyright-left {
-        display: none;
     }
 }
     /* Mobile (Portrait) - Note: Largeur de 320px */
@@ -366,25 +320,10 @@ ul.images li:hover span.text-overlay {
     h4 {
         margin-right: 20px;
     }
-    footer {
-        display: block;
-    }
-    .icons ul {
-        margin-top: 10px;
-        float: center;
-    }
-    .left-profile {
-        margin-top: 50px;
-    }
-    .left-profile img {
-        max-width: 20%;
-        float: center;
-        margin-top: 20px;
+    .sidenav img {
+        max-width: 50%;
     }
     .tab-page {
         margin-bottom: 40px;
-    }
-    .copyright-left {
-        display: none;
     }
 }
