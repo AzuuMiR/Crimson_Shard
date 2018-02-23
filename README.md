@@ -1,7 +1,5 @@
 # Crimson Shard
-_Version 0.2 (en cours de refonte)_
-
-_Répertoire à destination de l'IUT de Saint-Dié pour les formations MMI et Info._
+_Version 0.2_
 
 ### Pour accéder au site :
 
