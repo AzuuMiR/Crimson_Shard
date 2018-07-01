@@ -13,7 +13,7 @@
 body {
     background-image: url(../img/galaxy.jpg);
     background-attachment: fixed;
-    background-repeat: repeat;
+    background-size: cover;
     background-position: center;
     font-family: "OpenSansLight";
     height: 100vh;
